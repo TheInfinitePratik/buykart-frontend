@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero{
+  min-height: calc(100vh - 80px);
+    width: 100%;
+    overflow-x: hidden;
+  background: linear-gradient(
+    135deg,
+    #fff6e5 0%,
+    #fff 40%,
+    #fdf1ff 100%
+  );
+   margin-top: 0;
+  padding-top: 0;
+  position: relative;
+  top: -10px;
+
+    display: flex;
+    
+    
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: #090909;
+    font-size: 23px;
+    font-weight: 600;
+    /* margin-top: -0px; */
+}
+.hero-left p{
+    color: #171717;
+    font-size: 80px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn {
+  margin-top: 30px;
+  width: 240px;
+  height: 56px;
+  background: linear-gradient(90deg, #ff4141, #ff6a6a);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(255, 65, 65, 0.3);
+}
+
+.hero-latest-btn:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+
+
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-right img{
+  width: 67%;
+  /* height: auto; */
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 16px;
+    gap: 30px;
+  }
+
+  .hero-left {
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .hero-left h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .hero-left p {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-hand-icon {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-hand-icon img {
+    width: 50px;
+  }
+
+  .hero-latest-btn {
+    width: 200px;
+    height: 48px;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  /* image ko hide hi rakho – clean look */
+  .hero-right {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .hero-left {
+    padding-left: 0;
+  }
+
+  .hero-left p {
+    font-size: 56px;
+  }
+
+  .hero-right img {
+    width: 80%;
+  }
+}
