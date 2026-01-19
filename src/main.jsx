@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 import ShopContextProvider from './Context/shopContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter basename="/E-commerce-frontend" > 
+    <BrowserRouter basename="/buykart-frontend"> 
     <ShopContextProvider>
     <App />
     </ShopContextProvider>
