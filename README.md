@@ -1,6 +1,6 @@
 # 🛒 E-Commerce Frontend (React + Vite)
 
-Live Demo 👉  
+Live Demo 👉  https://buykart-frontend.netlify.app/
 
 
 ## 📌 Features
