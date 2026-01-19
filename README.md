@@ -1,7 +1,7 @@
 # 🛒 E-Commerce Frontend (React + Vite)
 
 Live Demo 👉  
-🔗 https://theinfinitepratik.github.io/E-commerce-frontend/
+
 
 ## 📌 Features
 - Fully responsive frontend
