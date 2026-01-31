@@ -1,0 +1,88 @@
+.discriptionbox{
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* ---------- NAV TABS ---------- */
+.discriptionbox-navigator{
+  display: flex;
+  gap: 12px;
+}
+
+.discriptionbox-nav-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+
+  width: 180px;
+  height: 60px;
+
+  background: #ffffff;
+  color: #333;
+
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* active tab */
+.discriptionbox-nav-box:not(.fade){
+  color: #ff4141;
+  box-shadow: 0 -6px 18px rgba(0,0,0,0.08);
+}
+
+/* inactive tab */
+.discriptionbox-nav-box.fade{
+  background: #f7f7f7;
+  color: #777;
+}
+
+/* ---------- DESCRIPTION CARD ---------- */
+.discriptionbox-discription{
+  background: #ffffff;
+  border-radius: 0 14px 14px 14px;
+
+  padding: 45px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+}
+
+.discriptionbox-discription p{
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px){
+  .discriptionbox{
+    margin: 60px auto;
+  }
+
+  .discriptionbox-navigator{
+    gap: 8px;
+  }
+
+  .discriptionbox-nav-box{
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .discriptionbox-discription{
+    padding: 25px;
+  }
+
+  .discriptionbox-discription p{
+    font-size: 14px;
+  }
+}
